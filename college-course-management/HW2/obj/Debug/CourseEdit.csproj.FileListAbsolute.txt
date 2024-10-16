@@ -1,0 +1,14 @@
+C:\Users\761415\Source\Repos\college-course-management\HW2\obj\Debug\CourseEdit.csproj.AssemblyReference.cache
+C:\Users\761415\Source\Repos\college-course-management\HW2\obj\Debug\CollegeCourseManagement.CourseEdit.resources
+C:\Users\761415\Source\Repos\college-course-management\HW2\obj\Debug\CollegeCourseManagement.Main.resources
+C:\Users\761415\Source\Repos\college-course-management\HW2\obj\Debug\HW2.Properties.Resources.resources
+C:\Users\761415\Source\Repos\college-course-management\HW2\obj\Debug\CourseEdit.csproj.GenerateResource.cache
+C:\Users\761415\Source\Repos\college-course-management\HW2\obj\Debug\CourseEdit.csproj.CoreCompileInputs.cache
+C:\Users\761415\Source\Repos\college-course-management\HW2\obj\Debug\HW2.exe
+C:\Users\761415\Source\Repos\college-course-management\HW2\obj\Debug\HW2.pdb
+C:\Users\761415\Source\Repos\college-course-management\HW2\bin\Debug\HW2.exe.config
+C:\Users\761415\Source\Repos\college-course-management\HW2\bin\Debug\HW2.exe
+C:\Users\761415\Source\Repos\college-course-management\HW2\bin\Debug\HW2.pdb
+C:\Users\761415\Source\Repos\college-course-management\HW2\bin\Debug\CollegeCourseDLL.dll
+C:\Users\761415\Source\Repos\college-course-management\HW2\bin\Debug\CollegeCourseDLL.pdb
+C:\Users\761415\Source\Repos\college-course-management\HW2\obj\Debug\CourseEdit.csproj.Up2Date
