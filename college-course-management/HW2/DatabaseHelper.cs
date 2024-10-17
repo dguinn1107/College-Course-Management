@@ -108,6 +108,10 @@ namespace CollegeCourseManagement
                 MessageBox.Show($"Error adding course: {ex.Message}");
             }
         }
+
+
+    
+
     }
 }
 

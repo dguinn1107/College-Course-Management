@@ -36,17 +36,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.timeOfclassbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.addCourseButoon = new System.Windows.Forms.Button();
             this.deleteCourseButton = new System.Windows.Forms.Button();
             this.courseDataGrid = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.timeOfclassbox = new System.Windows.Forms.GroupBox();
+            this.semesterOfferedComboBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.semesterOfferedbox = new System.Windows.Forms.TextBox();
+            this.courseTimeBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGrid)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.timeOfclassbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // courseIdtextbox
@@ -83,7 +82,6 @@
             this.Days_CheckedListBox.Name = "Days_CheckedListBox";
             this.Days_CheckedListBox.Size = new System.Drawing.Size(159, 55);
             this.Days_CheckedListBox.TabIndex = 3;
-            this.Days_CheckedListBox.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -121,13 +119,6 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Course Days";
             // 
-            // timeOfclassbox
-            // 
-            this.timeOfclassbox.Location = new System.Drawing.Point(134, 113);
-            this.timeOfclassbox.Name = "timeOfclassbox";
-            this.timeOfclassbox.Size = new System.Drawing.Size(100, 22);
-            this.timeOfclassbox.TabIndex = 10;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -136,16 +127,6 @@
             this.label6.Size = new System.Drawing.Size(89, 16);
             this.label6.TabIndex = 11;
             this.label6.Text = "Time of Class";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(131, 138);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 16);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "hh:mm AM/PM";
             // 
             // addCourseButoon
             // 
@@ -182,27 +163,38 @@
             this.courseDataGrid.TabIndex = 15;
             this.courseDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.courseDataGrid_CellClick);
             // 
-            // groupBox1
+            // timeOfclassbox
             // 
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.semesterOfferedbox);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.courseIdtextbox);
-            this.groupBox1.Controls.Add(this.titleCoursetextbox);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.Days_CheckedListBox);
-            this.groupBox1.Controls.Add(this.totalCoursehrsbox);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.timeOfclassbox);
-            this.groupBox1.Location = new System.Drawing.Point(21, 21);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(478, 330);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.timeOfclassbox.Controls.Add(this.courseTimeBox);
+            this.timeOfclassbox.Controls.Add(this.semesterOfferedComboBox);
+            this.timeOfclassbox.Controls.Add(this.label5);
+            this.timeOfclassbox.Controls.Add(this.label1);
+            this.timeOfclassbox.Controls.Add(this.courseIdtextbox);
+            this.timeOfclassbox.Controls.Add(this.titleCoursetextbox);
+            this.timeOfclassbox.Controls.Add(this.label2);
+            this.timeOfclassbox.Controls.Add(this.label4);
+            this.timeOfclassbox.Controls.Add(this.Days_CheckedListBox);
+            this.timeOfclassbox.Controls.Add(this.totalCoursehrsbox);
+            this.timeOfclassbox.Controls.Add(this.label6);
+            this.timeOfclassbox.Controls.Add(this.label3);
+            this.timeOfclassbox.Location = new System.Drawing.Point(21, 21);
+            this.timeOfclassbox.Name = "timeOfclassbox";
+            this.timeOfclassbox.Size = new System.Drawing.Size(478, 330);
+            this.timeOfclassbox.TabIndex = 16;
+            this.timeOfclassbox.TabStop = false;
+            this.timeOfclassbox.Text = "groupBox1";
+            // 
+            // semesterOfferedComboBox
+            // 
+            this.semesterOfferedComboBox.FormattingEnabled = true;
+            this.semesterOfferedComboBox.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
+            this.semesterOfferedComboBox.Location = new System.Drawing.Point(265, 45);
+            this.semesterOfferedComboBox.Name = "semesterOfferedComboBox";
+            this.semesterOfferedComboBox.Size = new System.Drawing.Size(121, 24);
+            this.semesterOfferedComboBox.TabIndex = 15;
             // 
             // label5
             // 
@@ -213,27 +205,32 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Semester Offered";
             // 
-            // semesterOfferedbox
+            // courseTimeBox
             // 
-            this.semesterOfferedbox.Location = new System.Drawing.Point(265, 47);
-            this.semesterOfferedbox.Name = "semesterOfferedbox";
-            this.semesterOfferedbox.Size = new System.Drawing.Size(100, 22);
-            this.semesterOfferedbox.TabIndex = 13;
+            this.courseTimeBox.FormattingEnabled = true;
+            this.courseTimeBox.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
+            this.courseTimeBox.Location = new System.Drawing.Point(138, 113);
+            this.courseTimeBox.Name = "courseTimeBox";
+            this.courseTimeBox.Size = new System.Drawing.Size(96, 24);
+            this.courseTimeBox.TabIndex = 16;
+            
             // 
             // CourseEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.timeOfclassbox);
             this.Controls.Add(this.courseDataGrid);
             this.Controls.Add(this.deleteCourseButton);
             this.Controls.Add(this.addCourseButoon);
             this.Name = "CourseEdit";
             this.Size = new System.Drawing.Size(1100, 547);
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGrid)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.timeOfclassbox.ResumeLayout(false);
+            this.timeOfclassbox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,15 +245,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox timeOfclassbox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button addCourseButoon;
         private System.Windows.Forms.Button deleteCourseButton;
         private System.Windows.Forms.DataGridView courseDataGrid;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox timeOfclassbox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox semesterOfferedbox;
+        private System.Windows.Forms.ComboBox semesterOfferedComboBox;
+        private System.Windows.Forms.ComboBox courseTimeBox;
     }
 }
 
